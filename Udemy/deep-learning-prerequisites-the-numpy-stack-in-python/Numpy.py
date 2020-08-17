@@ -89,3 +89,31 @@ b=np.array([2200,5050])
 x = np.linalg.solve(a,b)
 print x
 print np.linalg.inv(a).dot(b)
+print np.zeros((2,3))
+print np.ones((2,3))
+print 10 * np.ones((2,3))
+print np.eye(3)
+print np.random.random()
+print np.random.random((2,3))
+
+# Gaussian
+print np.random.randn(2,3)
+r=np.random.randn(1000)
+print np.mean(r)
+print r.var()
+print r.std()
+
+r=np.random.randn(10000,3)
+print r.mean(axis=0)
+print r.mean(axis=1)
+print r.mean(axis=1).shape
+print np.cov(r)
+print np.cov(r).shape
+print np.cov(r.T)
+print np.cov(r, rowvar=False)
+
+#randint
+
+print np.random.randint(1,10,size=(3,3))
+print np.random.choice(10,size=(3,3))
+
